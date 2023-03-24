@@ -1,0 +1,3 @@
+<mvc:View controllerName="Reuse.controller.MainView" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" width="100%">
+    <App id="app"></App>
+</mvc:View>

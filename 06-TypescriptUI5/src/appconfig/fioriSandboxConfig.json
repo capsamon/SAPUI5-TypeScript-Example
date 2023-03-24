@@ -1,0 +1,28 @@
+{
+    "applications": {
+      "GL-lineItems": {
+        "title": "Reuse"
+      }
+    },
+    "services": {
+      "LaunchPage": {
+        "adapter": {
+          "config": {
+            "groups": []
+          }
+        }
+      },
+      "NavTargetResolution": {
+        "adapter": {
+          "config": {
+            "applications": {
+              "GL-lineItems": {
+                "additionalInformation": "SAPUI5.Component=Reuse",
+                "url": "/"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
