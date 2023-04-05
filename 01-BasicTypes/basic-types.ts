@@ -1,5 +1,7 @@
 //Create all variables and type them accordingly.
-const myName;
+//More info on variables and typings can be found here:
+//https://www.typescriptlang.org/docs/handbook/2/everyday-types.html
+const myName: string;
 const myAge;
 const iAmDeveloper;
 
