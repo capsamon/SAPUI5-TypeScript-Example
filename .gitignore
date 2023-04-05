@@ -17,9 +17,7 @@ APIExternalProducer.js
 .*/APIExternalProducer.js
 node_modules
 ./node_modules
-dist/
-# UI build files
-webapp/
-../dist/
 06-TypescriptUI5/dist/
 app_resources/
+webapp
+dist
