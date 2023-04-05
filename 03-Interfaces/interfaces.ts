@@ -18,3 +18,12 @@ const ASMLMachine = {
 let thisIsAlsoAnASMLMachine;
 thisIsAlsoAnASMLMachine.equipmentsUsed.push("ServiceItem1");
 thisIsAlsoAnASMLMachine.name = "NXT 400";
+
+
+//This way we can 'extend' type definitions
+type PartialPointX1 = { x: number; };
+type Point1 = PartialPointX1 & { y: number; };
+
+//Versus extending interface definitions
+interface PartialPointX2 { x: number; }
+interface Point2 extends PartialPointX2 { y: number; }
