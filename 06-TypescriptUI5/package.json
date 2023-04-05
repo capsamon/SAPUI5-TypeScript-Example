@@ -19,6 +19,7 @@
         "npm-run-all": "^4.1.5",
         "tsc-watch": "^6.0.0",
         "typescript": "^4.9.4",
+        "ui5-middleware-cfdestination": "*",
         "ui5-middleware-simpleproxy": "^0.7.3"
     },
     "scripts": {
@@ -30,7 +31,8 @@
         "dependencies": [
             "@sap/ui5-builder-webide-extension",
             "@sap/ux-ui5-tooling",
-            "ui5-middleware-simpleproxy"
+            "ui5-middleware-simpleproxy",
+            "ui5-middleware-cfdestination"
         ]
     }
 }

@@ -1,0 +1,53 @@
+specVersion: "1.0"
+metadata:
+  name: TestApplication
+type: application
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8
+builder:
+  customTasks:
+    - name: webide-extension-task-updateManifestJson
+      beforeTask: generateManifestBundle
+      configuration:
+        appFolder: webapp
+        destDir: dist
+    - name: webide-extension-task-resources
+      afterTask: generateVersionInfo
+      configuration:
+        nameSpace: TestApplication
+    - name: webide-extension-task-copyFile
+      afterTask: webide-extension-task-resources
+      configuration:
+        srcFile: "/xs-app.json"
+        destFile: "/xs-app.json"
+    - name: webide-extension-task-lint
+      afterTask: webide-extension-task-copyFile
+      configuration:
+        destDir: dist
+        appFolder: webapp
+        nameSpace: TestApplication
+server:
+  customMiddleware:
+    - name: ui5-middleware-cfdestination
+      afterMiddleware: compression
+      configuration:
+        authenticationMethod: "none" # "none" || "route", default: "none"
+        allowServices: true # allows BTP services like SAP IoT to be used
+        debug: true
+        port: 1091
+        xsappJson: "local/xs-app.json"
+        destinations:
+            # check that the destination name (here: "backend") matches your router in xs-app.json
+          - name: "reusecap-srv"
+            url: "http://localhost:4004/"
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+          version: ""

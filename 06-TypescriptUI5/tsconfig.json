@@ -3,6 +3,7 @@
     "compilerOptions": {
         "target": "es2015",
         "module": "es2015",
+        "moduleResolution": "node",
         "skipLibCheck": true,
         "preserveConstEnums": true,
         "sourceMap": false,
@@ -21,7 +22,8 @@
             "sap/*": [ "./node_modules/@sapui5/ts-types-esm/*" ]
         },
         "types": [
-            "@sapui5/ts-types-esm"
+            "@sapui5/ts-types-esm",
+            "@types/jquery"
         ]
     },
     "watchOptions": {

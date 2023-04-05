@@ -1,7 +1,7 @@
 {
     "applications": {
       "GL-lineItems": {
-        "title": "Reuse"
+        "title": "TestApplication"
       }
     },
     "services": {
@@ -17,7 +17,7 @@
           "config": {
             "applications": {
               "GL-lineItems": {
-                "additionalInformation": "SAPUI5.Component=Reuse",
+                "additionalInformation": "SAPUI5.Component=TestApplication",
                 "url": "/"
               }
             }

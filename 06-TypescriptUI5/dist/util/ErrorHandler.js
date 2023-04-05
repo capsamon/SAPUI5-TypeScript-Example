@@ -1,7 +1,7 @@
 import typeChecker from "TestApplication/helperfunctions/typeChecker";
 import MessageBox from "sap/m/MessageBox";
 /**
- * @namespace Reuse.helperfunctions
+ * @namespace TestApplication.helperfunctions
  */
 export default {
     throwNewError(i18nMessageString, detailedError) {

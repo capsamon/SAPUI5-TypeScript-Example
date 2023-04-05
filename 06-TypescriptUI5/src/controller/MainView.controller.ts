@@ -1,7 +1,7 @@
 import BaseController from "TestApplication/controller/BaseController"
 
 /**
- * @namespace Reuse.controller
+ * @namespace TestApplication.controller
  */
 export default class MainView extends BaseController {
     onInit(): void {

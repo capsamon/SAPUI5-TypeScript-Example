@@ -3,7 +3,7 @@ import ResourceBundle from "sap/base/i18n/ResourceBundle";
 import MessageBox from "sap/m/MessageBox";
 
 /**
- * @namespace Reuse.helperfunctions
+ * @namespace TestApplication.helperfunctions
  */
 export default {
     throwNewError(i18nMessageString: string, detailedError: string): never {

@@ -1,0 +1,14 @@
+{
+	"welcomeFile": "/index.html",
+	"authenticationMethod": "route",
+	"logout": {
+		"logoutEndpoint": "/do/logout"
+	},
+	"routes": [{
+		"csrfProtection": false,
+		"source": "^/api/(.*)$",
+		"target": "$1",
+		"destination": "reusecap-srv",
+		"authenticationType": "xsuaa"
+	}]
+}

@@ -11,7 +11,7 @@ import UIComponent from "sap/ui/core/UIComponent";
 /**
  * @namespace TestApplication
  */
-class Component extends UIComponent {
+export default class Component extends UIComponent {
     init() {
         return __awaiter(this, void 0, void 0, function* () {
             sap.ui.getCore().setModel(this.getModel("i18n"), "i18n");
@@ -23,4 +23,3 @@ class Component extends UIComponent {
 Component.metadata = {
     manifest: "json"
 };
-export default Component;
