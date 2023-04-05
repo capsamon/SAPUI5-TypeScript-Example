@@ -1,14 +1,14 @@
 import Controller from "sap/ui/core/mvc/Controller";
 import Event from "sap/ui/base/Event";
-import typeChecker from "Resources/helperfunctions/typeChecker";
+import typeChecker from "TestApplication/helperfunctions/typeChecker";
 import Model from "sap/ui/model/Model";
 import ResourceBundle from "sap/base/i18n/ResourceBundle";
 import Component from "sap/ui/core/Component";
 import Router from "sap/ui/core/routing/Router";
-import ErrorHandler from "Resources/util/ErrorHandler";
+import ErrorHandler from "TestApplication/util/ErrorHandler";
 
 /**
- * @namespace Reuse.controller
+ * @namespace TestApplication.controller
  */
  export default class BaseController extends Controller {
 	public getRouter() : Router {

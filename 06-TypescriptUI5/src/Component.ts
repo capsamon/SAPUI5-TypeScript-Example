@@ -1,7 +1,7 @@
 import UIComponent from "sap/ui/core/UIComponent";
 
 /**
- * @namespace Reuse
+ * @namespace TestApplication
  */
 export default class Component extends UIComponent {    
     public static metadata = {

@@ -23,7 +23,7 @@ import Switch from "sap/m/Switch";
 import ObjectAttribute from "sap/m/ObjectAttribute";
 
 /**
- * @namespace Reuse.helperfunctions
+ * @namespace TestApplication.helperfunctions
  */
 export default {
     isValidUIComponent(component: any): component is UIComponent {

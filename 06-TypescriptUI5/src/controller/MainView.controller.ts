@@ -1,4 +1,4 @@
-import BaseController from "Resources/controller/BaseController"
+import BaseController from "TestApplication/controller/BaseController"
 
 /**
  * @namespace Reuse.controller

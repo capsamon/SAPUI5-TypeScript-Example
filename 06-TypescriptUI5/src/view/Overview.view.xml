@@ -1,4 +1,4 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="Reuse.controller.Overview" displayBlock="true" xmlns:variant="sap.ui.comp.variants">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="TestApplication.controller.Overview" displayBlock="true" xmlns:variant="sap.ui.comp.variants">
     <semantic:SemanticPage headerExpanded="true" showFooter="false" class="sapUiSizeCompact">
         <Label text="The application is running!"/>
 	</semantic:SemanticPage>

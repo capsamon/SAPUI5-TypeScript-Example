@@ -1,4 +1,4 @@
-import typeChecker from "Reuse/helperfunctions/typeChecker"
+import typeChecker from "TestApplication/helperfunctions/typeChecker"
 import ResourceBundle from "sap/base/i18n/ResourceBundle";
 import MessageBox from "sap/m/MessageBox";
 

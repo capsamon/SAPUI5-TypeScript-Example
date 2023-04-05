@@ -2,7 +2,7 @@
 	"_version": "1.9.0",
 	"sap.app": {
 		"_version": "1.3.0",
-		"id": "Reuse",
+		"id": "TestApplication",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",
@@ -15,8 +15,8 @@
 			"version": "1.52.7"
 		},
 		"dataSources": {
-            "reusecap-srv":{
-                "uri": "/api/v2/re-use/",
+            "testcap-srv":{
+                "uri": "/api/v2/cap/",
                 "type": "OData",
                 "settings": {
                     "odataVersion": "2.0"
@@ -32,9 +32,9 @@
 					},
 					"semanticObject": "object1",
 					"action": "action1",
-					"title": "Reuse",
+					"title": "TestApplication",
 					"indicatorDataSource": {
-						"dataSource": "reusecap-srv",
+						"dataSource": "testcap-srv",
 						"path": ""
 					}
 				}
@@ -76,7 +76,7 @@
         },
 		"handleValidation": true,
 		"rootView": {
-			"viewName": "Reuse.view.MainView",
+			"viewName": "TestApplication.view.MainView",
 			"type": "XML",
 			"async": true,
 			"id": "MainView"
@@ -100,7 +100,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "Reuse.i18n.i18n"
+					"bundleName": "TestApplication.i18n.i18n"
 				},
 				"preload": true
 			},
@@ -111,20 +111,8 @@
 					"defaultBindingMode": "TwoWay",
 					"defaultCountMode": "Request"
 				},
-				"dataSource": "reusecap-srv",
+				"dataSource": "testcap-srv",
 				"preload": true
-			},
-			"overviewVariantManagement": {
-				"type": "sap.ui.model.json.JSONModel",
-				"settings": {
-					"defaultBindingMode": "TwoWay"
-				}
-			},
-			"liveDataModel": {
-				"type": "sap.ui.model.json.JSONModel",
-				"settings": {
-					"defaultBindingMode": "TwoWay"
-				}
 			}
 		},
 		"resources": {
@@ -141,14 +129,7 @@
 					"viewName": "Overview",
 					"viewLevel": 1,
 					"controlAggregation": "pages",
-					"title": "Re-use scenarios"
-				},
-				"Details": {
-					"viewId": "Details",
-					"viewName": "Details",
-					"viewLevel": 2,
-					"controlAggregation": "pages",
-					"title": "Re-use details"
+					"title": "TestApplication overview"
 				}
 			},
 			"routes": [
@@ -158,18 +139,12 @@
 					"target": [
 						"Overview"
 					]
-				}, {
-					"name": "Details",
-					"pattern": "/Details/:TopPlant:/:ChildPlant:/:ChildMaterial:/:TopMaterial:/:TopEquipment:/:ChildEquipment:/:isLive:/",
-					"target": [
-						"Details"
-					]
 				}
 			],
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "Reuse.view",
+				"viewPath": "TestApplication.view",
 				"controlId": "app",
 				"targetAggregation": "pages",
 				"async": true,

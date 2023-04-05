@@ -1,8 +1,8 @@
-import BaseController from "Resources/controller/BaseController"
+import BaseController from "TestApplication/controller/BaseController"
 import JSONModel from "sap/ui/model/json/JSONModel";
 
 /**
- * @namespace Reuse.controller
+ * @namespace TestApplication.controller
  */
 export default class App extends BaseController {
 	
