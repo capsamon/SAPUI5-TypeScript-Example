@@ -31,3 +31,6 @@ type Point1 = PartialPointX1 & { y: number; };
 //Versus extending interface definitions
 interface PartialPointX2 { x: number; }
 interface Point2 extends PartialPointX2 { y: number; }
+
+//For more info on the differences between types and interfaces
+//https://stackoverflow.com/questions/37233735/interfaces-vs-types-in-typescript
