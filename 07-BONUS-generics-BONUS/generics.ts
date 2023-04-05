@@ -19,3 +19,6 @@ function identityFunction3<Type>(arg: Type): Type {
     return arg;
 }
 const outcomeOfService3 = identityFunction3("TypedString");
+
+//We can also tell the compiler which type we are passing, if we want to 'overrule' it, like so;
+const outcomeOfService4 = identityFunction3<string>("TypedString");
