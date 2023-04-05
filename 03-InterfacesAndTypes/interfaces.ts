@@ -1,5 +1,9 @@
-//Create a basic interface we can use to type our ASMLMachine accordingly, without typing it out everytime.
+//Create a basic interface and/or type we can use to type our ASMLMachine accordingly, without writing it out everytime.
 interface ASMLMachine {
+    //Properties go here
+}
+
+type ASMLMachineType = {
     //Properties go here
 }
 
