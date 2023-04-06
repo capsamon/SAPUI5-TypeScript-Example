@@ -15,4 +15,8 @@ export default class App extends BaseController {
 			lastRefreshDate: null
 		}), "overview");
 	}
+
+	public onAfterRendering(): void {
+		//Implement code that fetches the label on the main view, and sets a new text on that label.
+	}
 }
