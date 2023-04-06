@@ -19,5 +19,5 @@ node_modules
 ./node_modules
 06-TypescriptUI5/dist/
 app_resources/
-./webapp
-./dist
+webapp
+dist
